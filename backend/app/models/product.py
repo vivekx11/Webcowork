@@ -13,7 +13,7 @@ class Category(db.Model):
     description = db.Column(db.Text)
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
     
-    # Relationships
+    # Relationships between products
     products = db.relationship('Product', backref='category', lazy=True)
     
     def to_dict(self):

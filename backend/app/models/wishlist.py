@@ -13,7 +13,7 @@ class Wishlist(db.Model):
     product_id = db.Column(db.Integer, db.ForeignKey('products.id'), nullable=False)
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
     
-    # Unique constraint to prevent duplicate wishlist items
+    # Unique constraint to prevent duplicate wishlist item
     __table_args__ = (db.UniqueConstraint('user_id', 'product_id', name='unique_wishlist_item'),)
     
     def to_dict(self):

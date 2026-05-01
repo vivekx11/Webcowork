@@ -12,7 +12,7 @@ class Order(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
     total_amount = db.Column(db.Float, nullable=False)
     status = db.Column(db.String(20), default='pending', nullable=False)  # pending, processing, shipped, delivered, cancelled
-    payment_status = db.Column(db.String(20), default='pending', nullable=False)  # pending, paid, failed
+    payment_status = db.Column(db.String(20), default='pending', nullable=False)  # pending, paid, failed methods
     payment_method = db.Column(db.String(50))
     payment_id = db.Column(db.String(200))  # Stripe payment ID
     

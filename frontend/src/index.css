@@ -21,7 +21,7 @@ code {
     monospace;
 }
 
-/* Custom scrollbar */
+/* Custom and optimal scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;

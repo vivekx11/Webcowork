@@ -1,5 +1,5 @@
 # E-Commerce Application - Project Summary
-
+---------------------------------------------
 ## 🎉 Project Complete!
 
 You now have a **full-stack advanced e-commerce web application** with all the requested features and more!

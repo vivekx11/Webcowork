@@ -23,7 +23,7 @@ class User(db.Model):
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
     updated_at = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
     
-    # Relationships
+    # Relationships between orders
     orders = db.relationship('Order', backref='user', lazy=True, cascade='all, delete-orphan')
     cart_items = db.relationship('Cart', backref='user', lazy=True, cascade='all, delete-orphan')
     wishlist_items = db.relationship('Wishlist', backref='user', lazy=True, cascade='all, delete-orphan')

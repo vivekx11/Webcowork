@@ -16,7 +16,7 @@ class Review(db.Model):
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
     updated_at = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
     
-    # Unique constraint: one review per user per product
+    # Unique constraint: one review per user per products
     __table_args__ = (db.UniqueConstraint('user_id', 'product_id', name='unique_user_product_review'),)
     
     def to_dict(self):

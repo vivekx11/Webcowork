@@ -1,5 +1,5 @@
 # E-Commerce API Documentation
-
+------------------------------
 Complete API reference for the E-Commerce platform.
 
 ## Base URL

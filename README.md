@@ -1,4 +1,4 @@
-# Advanced E-Commerce Web Application
+#  E-Commerce Web Application
 
 A full-stack e-commerce platform with admin panel, user shopping interface, and advanced features.
 
